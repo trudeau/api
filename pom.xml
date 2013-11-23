@@ -27,7 +27,7 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <name>Trudeau - Graph APIs</name>
-  <description>Graph APIs definition.</description>
+  <description>Java Graph APIs definition.</description>
   <url>http://trudeau.github.io/api</url>
 
   <scm>
