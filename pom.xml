@@ -24,7 +24,7 @@
   </parent>
 
   <artifactId>org.99soft.trudeau.api</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2-SNAPSHOT</version>
 
   <name>Trudeau - Graph APIs</name>
   <description>Java Graph APIs definition.</description>
@@ -34,7 +34,7 @@
     <url>http://github.com/trudeau/api</url>
     <connection>scm:git:ssh://github.com/trudeau/api.git</connection>
     <developerConnection>scm:git:git+ssh://git@github.com/trudeau/api.git</developerConnection>
-    <tag>org.99soft.trudeau.api-0.0.1</tag>
+    <tag>HEAD</tag>
   </scm>
   <issueManagement>
     <system>GitHub Issue Management</system>
