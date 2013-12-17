@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="shortcut icon" type="image/x-icon" href="../../../../favicon.ico" />
+<title>
+
+  Graphs
+
+
+| Trudeau - Graph APIs
+
+</title>
+<link href="../../../../../assets/android-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../../assets/android-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../../", "../../../../../assets/");
+</script>
+<script src="../../../../../assets/android-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../../assets/navtree_data.js" type="text/javascript"></script>
+<script src="../../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="">
+
+<div id="header">
+    <div id="headerLeft">
+    
+      <span id="masthead-title">Trudeau - Graph APIs</span>
+    
+    </div>
+    <div id="headerRight">
+      
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../../')"
+                      onkeyup="return search_changed(event, false, '../../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+      
+    </div>
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links"><nobr>
+                <a href="../../../../packages.html"  >Package Index</a> | 
+                <a href="../../../../classes.html" >Class Index</a></nobr>
+              </div>
+              <ul>
+                
+    <li class="selected api apilevel-">
+  <a href="../../../../org/nnsoft/trudeau/api/package-summary.html">org.nnsoft.trudeau.api</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/DirectedGraph.html">DirectedGraph</a>&lt;V,&nbsp;E&gt;</li>
+          <li class="api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a>&lt;V,&nbsp;E&gt;</li>
+          <li class="api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/Mapper.html">Mapper</a>&lt;I,&nbsp;O&gt;</li>
+          <li class="api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/MutableGraph.html">MutableGraph</a>&lt;V,&nbsp;E&gt;</li>
+          <li class="api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/Path.html">Path</a>&lt;V,&nbsp;E&gt;</li>
+          <li class="api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/SpanningTree.html">SpanningTree</a>&lt;V,&nbsp;WE,&nbsp;W&gt;</li>
+          <li class="api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/UndirectedGraph.html">UndirectedGraph</a>&lt;V,&nbsp;E&gt;</li>
+          <li class="api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/Weighted.html">Weighted</a>&lt;W&gt;</li>
+          <li class="api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/WeightedPath.html">WeightedPath</a>&lt;V,&nbsp;E,&nbsp;W&gt;</li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="selected api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/Graphs.html">Graphs</a></li>
+          <li class="api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/RevertedGraph.html">RevertedGraph</a>&lt;V,&nbsp;E&gt;</li>
+          <li class="api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/VertexPair.html">VertexPair</a>&lt;V&gt;</li>
+      </ul>
+    </li>
+              
+              
+              
+    <li><h2>Exceptions</h2>
+      <ul>
+          <li class="api apilevel-"><a href="../../../../org/nnsoft/trudeau/api/GraphException.html">GraphException</a></li>
+      </ul>
+    </li>
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links"><nobr>
+            <a href="../../../../packages.html"  >Package Index</a> | 
+            <a href="../../../../classes.html" >Class Index</a></nobr>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+Summary:
+
+
+
+
+
+
+
+
+
+
+
+  <a href="#pubmethods">Methods</a>
+  
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+     
+    final 
+    
+    class
+<h1>Graphs</h1>
+
+
+
+  
+    extends Object<br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Object</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">org.nnsoft.trudeau.api.Graphs</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Class Overview</h2>
+<p>The Apache Commons Graph package is a toolkit for managing graphs and graph based data structures.
+</p>
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            &lt;V,&nbsp;E&gt;
+            <a href="../../../../org/nnsoft/trudeau/api/DirectedGraph.html">DirectedGraph</a>&lt;V,&nbsp;E&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../org/nnsoft/trudeau/api/Graphs.html#synchronize(org.nnsoft.trudeau.api.DirectedGraph<V, E>)">synchronize</a></span>(<a href="../../../../org/nnsoft/trudeau/api/DirectedGraph.html">DirectedGraph</a>&lt;V,&nbsp;E&gt; graph)</nobr>
+        
+        <div class="jd-descrdiv">Returns a synchronized (thread-safe) <code><a href="../../../../org/nnsoft/trudeau/api/DirectedGraph.html">DirectedGraph</a></code> backed by the specified Graph.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            &lt;V,&nbsp;E&gt;
+            <a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a>&lt;V,&nbsp;E&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../org/nnsoft/trudeau/api/Graphs.html#synchronize(org.nnsoft.trudeau.api.Graph<V, E>)">synchronize</a></span>(<a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a>&lt;V,&nbsp;E&gt; graph)</nobr>
+        
+        <div class="jd-descrdiv">Returns a synchronized (thread-safe) <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code> backed by the specified Graph.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            &lt;V,&nbsp;E&gt;
+            <a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a>&lt;V,&nbsp;E&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../org/nnsoft/trudeau/api/Graphs.html#synchronize(org.nnsoft.trudeau.api.MutableGraph<V, E>)">synchronize</a></span>(<a href="../../../../org/nnsoft/trudeau/api/MutableGraph.html">MutableGraph</a>&lt;V,&nbsp;E&gt; graph)</nobr>
+        
+        <div class="jd-descrdiv">Returns a synchronized (thread-safe) <code><a href="../../../../org/nnsoft/trudeau/api/MutableGraph.html">MutableGraph</a></code> backed by the specified Graph.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            &lt;V,&nbsp;E&gt;
+            <a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a>&lt;V,&nbsp;E&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../org/nnsoft/trudeau/api/Graphs.html#synchronize(org.nnsoft.trudeau.api.UndirectedGraph<V, E>)">synchronize</a></span>(<a href="../../../../org/nnsoft/trudeau/api/UndirectedGraph.html">UndirectedGraph</a>&lt;V,&nbsp;E&gt; graph)</nobr>
+        
+        <div class="jd-descrdiv">Returns a synchronized (thread-safe) <code><a href="../../../../org/nnsoft/trudeau/api/UndirectedGraph.html">UndirectedGraph</a></code> backed by the specified Graph.</div>
+  
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  java.lang.Object
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            Object</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(Object arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            Class&lt;?&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notify</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">notifyAll</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">toString</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- Public ctors -->
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="synchronize(org.nnsoft.trudeau.api.DirectedGraph<V, E>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../org/nnsoft/trudeau/api/DirectedGraph.html">DirectedGraph</a>&lt;V,&nbsp;E&gt;
+      </span>
+      <span class="sympad">synchronize</span>
+      <span class="normal">(<a href="../../../../org/nnsoft/trudeau/api/DirectedGraph.html">DirectedGraph</a>&lt;V,&nbsp;E&gt; graph)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns a synchronized (thread-safe) <code><a href="../../../../org/nnsoft/trudeau/api/DirectedGraph.html">DirectedGraph</a></code> backed by the specified Graph.
+
+ It is imperative that the user manually synchronize on the returned graph when iterating over iterable collections:
+ <pre>
+     Graph syncGraph = synchronize( graph );
+         ...
+     synchronized(syncGraph) {
+         for ( Vertex v : g.getVertices() ) // Must be in synchronized block
+         {
+            foo( v )
+         }
+   }
+ </pre>
+
+ Failure to follow this advice may result in non-deterministic behavior.
+
+ The returned <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code> will be serializable if the specified <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code> is serializable.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>graph</td>
+          <td>the input <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code></td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the syncronyzed graph
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="synchronize(org.nnsoft.trudeau.api.Graph<V, E>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a>&lt;V,&nbsp;E&gt;
+      </span>
+      <span class="sympad">synchronize</span>
+      <span class="normal">(<a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a>&lt;V,&nbsp;E&gt; graph)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns a synchronized (thread-safe) <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code> backed by the specified Graph.
+
+ It is imperative that the user manually synchronize on the returned graph when iterating over iterable collections:
+ <pre>
+     Graph syncGraph = synchronize( graph );
+         ...
+     synchronized(syncGraph) {
+         for ( Vertex v : g.getVertices() ) // Must be in synchronized block
+         {
+            foo( v )
+         }
+   }
+ </pre>
+
+ Failure to follow this advice may result in non-deterministic behavior.
+
+ The returned <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code> will be serializable if the specified <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code> is serializable.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>graph</td>
+          <td>the input <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code></td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the syncronyzed graph
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="synchronize(org.nnsoft.trudeau.api.MutableGraph<V, E>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a>&lt;V,&nbsp;E&gt;
+      </span>
+      <span class="sympad">synchronize</span>
+      <span class="normal">(<a href="../../../../org/nnsoft/trudeau/api/MutableGraph.html">MutableGraph</a>&lt;V,&nbsp;E&gt; graph)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns a synchronized (thread-safe) <code><a href="../../../../org/nnsoft/trudeau/api/MutableGraph.html">MutableGraph</a></code> backed by the specified Graph.
+
+ It is imperative that the user manually synchronize on the returned graph when iterating over iterable collections:
+ <pre>
+     Graph syncGraph = synchronize( graph );
+         ...
+     synchronized(syncGraph) {
+         for ( Vertex v : g.getVertices() ) // Must be in synchronized block
+         {
+            foo( v )
+         }
+   }
+ </pre>
+
+ Failure to follow this advice may result in non-deterministic behavior.
+
+ The returned <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code> will be serializable if the specified <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code> is serializable.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>graph</td>
+          <td>the input <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code></td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the synchronized graph
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="synchronize(org.nnsoft.trudeau.api.UndirectedGraph<V, E>)"></A>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a>&lt;V,&nbsp;E&gt;
+      </span>
+      <span class="sympad">synchronize</span>
+      <span class="normal">(<a href="../../../../org/nnsoft/trudeau/api/UndirectedGraph.html">UndirectedGraph</a>&lt;V,&nbsp;E&gt; graph)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns a synchronized (thread-safe) <code><a href="../../../../org/nnsoft/trudeau/api/UndirectedGraph.html">UndirectedGraph</a></code> backed by the specified Graph.
+
+ It is imperative that the user manually synchronize on the returned graph when iterating over iterable collections:
+ <pre>
+     Graph syncGraph = synchronize( graph );
+         ...
+     synchronized(syncGraph) {
+         for ( Vertex v : g.getVertices() ) // Must be in synchronized block
+         {
+            foo( v )
+         }
+   }
+ </pre>
+
+ Failure to follow this advice may result in non-deterministic behavior.
+
+ The returned <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code> will be serializable if the specified <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code> is serializable.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>graph</td>
+          <td>the input <code><a href="../../../../org/nnsoft/trudeau/api/Graph.html">Graph</a></code></td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>the syncronyzed graph
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<A NAME="navbar_top"></A>
+
+<div id="footer">
+Generated by <a href="http://code.google.com/p/doclava/">Doclava</a>.
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize android-developer-docs.js */
+</script>
+
+</body>
+</html>

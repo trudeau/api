@@ -1,0 +1,723 @@
+<api>
+<package name="org.nnsoft.trudeau.api"
+>
+<interface name="DirectedGraph"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.api.Graph">
+</implements>
+<method name="getInDegree"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getInbound"
+ return="java.lang.Iterable&lt;V&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getOutDegree"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getOutbound"
+ return="java.lang.Iterable&lt;V&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+</interface>
+<interface name="Graph"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="containsEdge"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="e" type="E">
+</parameter>
+</method>
+<method name="containsVertex"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getConnectedVertices"
+ return="java.lang.Iterable&lt;V&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getDegree"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getEdge"
+ return="E"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="source" type="V">
+</parameter>
+<parameter name="target" type="V">
+</parameter>
+</method>
+<method name="getEdges"
+ return="java.lang.Iterable&lt;E&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOrder"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSize"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getVertices"
+ return="java.lang.Iterable&lt;V&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getVertices"
+ return="org.nnsoft.trudeau.api.VertexPair&lt;V&gt;"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="e" type="E">
+</parameter>
+</method>
+</interface>
+<class name="GraphException"
+ extends="java.lang.RuntimeException"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="GraphException"
+ type="org.nnsoft.trudeau.api.GraphException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<constructor name="GraphException"
+ type="org.nnsoft.trudeau.api.GraphException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="messagePattern" type="java.lang.String">
+</parameter>
+<parameter name="arguments" type="java.lang.Object...">
+</parameter>
+</constructor>
+<constructor name="GraphException"
+ type="org.nnsoft.trudeau.api.GraphException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="msg" type="java.lang.String">
+</parameter>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+<constructor name="GraphException"
+ type="org.nnsoft.trudeau.api.GraphException"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="cause" type="java.lang.Throwable">
+</parameter>
+</constructor>
+</class>
+<class name="Graphs"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="synchronize"
+ return="org.nnsoft.trudeau.api.DirectedGraph&lt;V, E&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="graph" type="org.nnsoft.trudeau.api.DirectedGraph&lt;V, E&gt;">
+</parameter>
+</method>
+<method name="synchronize"
+ return="org.nnsoft.trudeau.api.Graph&lt;V, E&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="graph" type="org.nnsoft.trudeau.api.Graph&lt;V, E&gt;">
+</parameter>
+</method>
+<method name="synchronize"
+ return="org.nnsoft.trudeau.api.Graph&lt;V, E&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="graph" type="org.nnsoft.trudeau.api.MutableGraph&lt;V, E&gt;">
+</parameter>
+</method>
+<method name="synchronize"
+ return="org.nnsoft.trudeau.api.Graph&lt;V, E&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="graph" type="org.nnsoft.trudeau.api.UndirectedGraph&lt;V, E&gt;">
+</parameter>
+</method>
+</class>
+<interface name="Mapper"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="map"
+ return="O"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="input" type="I">
+</parameter>
+</method>
+</interface>
+<interface name="MutableGraph"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.api.Graph">
+</implements>
+<method name="addEdge"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="head" type="V">
+</parameter>
+<parameter name="e" type="E">
+</parameter>
+<parameter name="tail" type="V">
+</parameter>
+</method>
+<method name="addVertex"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="removeEdge"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="e" type="E">
+</parameter>
+</method>
+<method name="removeVertex"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+</interface>
+<interface name="Path"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.api.Graph">
+</implements>
+<method name="getSource"
+ return="V"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTarget"
+ return="V"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<class name="RevertedGraph"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.api.DirectedGraph">
+</implements>
+<constructor name="RevertedGraph"
+ type="org.nnsoft.trudeau.api.RevertedGraph"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="directedGraph" type="org.nnsoft.trudeau.api.DirectedGraph&lt;V, E&gt;">
+</parameter>
+</constructor>
+<method name="containsEdge"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="e" type="E">
+</parameter>
+</method>
+<method name="containsVertex"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getConnectedVertices"
+ return="java.lang.Iterable&lt;V&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getDegree"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getEdge"
+ return="E"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="source" type="V">
+</parameter>
+<parameter name="target" type="V">
+</parameter>
+</method>
+<method name="getEdges"
+ return="java.lang.Iterable&lt;E&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getInDegree"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getInbound"
+ return="java.lang.Iterable&lt;V&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getOrder"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getOutDegree"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getOutbound"
+ return="java.lang.Iterable&lt;V&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="v" type="V">
+</parameter>
+</method>
+<method name="getSize"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getVertices"
+ return="java.lang.Iterable&lt;V&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getVertices"
+ return="org.nnsoft.trudeau.api.VertexPair&lt;V&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="e" type="E">
+</parameter>
+</method>
+</class>
+<interface name="SpanningTree"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.api.UndirectedGraph">
+</implements>
+<implements name="org.nnsoft.trudeau.api.Weighted">
+</implements>
+</interface>
+<interface name="UndirectedGraph"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.api.Graph">
+</implements>
+</interface>
+<class name="VertexPair"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="VertexPair"
+ type="org.nnsoft.trudeau.api.VertexPair"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="head" type="V">
+</parameter>
+<parameter name="tail" type="V">
+</parameter>
+</constructor>
+<method name="getHead"
+ return="V"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTail"
+ return="V"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<interface name="Weighted"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="getWeight"
+ return="W"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<interface name="WeightedPath"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="org.nnsoft.trudeau.api.Path">
+</implements>
+<implements name="org.nnsoft.trudeau.api.Weighted">
+</implements>
+</interface>
+</package>
+</api>
