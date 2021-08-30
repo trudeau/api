@@ -37,7 +37,7 @@ import java.util.Objects;
  * @param <V> the Graph vertices type
  * @param <E> the Graph edges type
  */
-final class InMemoryPath<V, E>
+public class InMemoryPath<V, E>
     implements Path<V, E>
 {
 
