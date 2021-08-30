@@ -24,7 +24,6 @@ package org.nnsoft.trudeau.api;
  * @param <E> the Graph edges type
  */
 public interface Path<V, E>
-    extends Graph<V, E>
 {
 
     /**

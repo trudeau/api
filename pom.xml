@@ -20,7 +20,7 @@
   <parent>
     <groupId>org.99soft.trudeau</groupId>
     <artifactId>trudeau-parent</artifactId>
-    <version>1</version>
+    <version>3-SNAPSHOT</version>
   </parent>
 
   <artifactId>org.99soft.trudeau.api</artifactId>
@@ -50,13 +50,5 @@
       <url>gitsite:git@github.com/trudeau/api.git</url>
     </site>
   </distributionManagement>
-
-  <dependencies>
-    <dependency>
-      <groupId>org.99soft.trudeau</groupId>
-      <artifactId>org.99soft.trudeau.utils</artifactId>
-      <version>0.0.1</version>
-    </dependency>
-  </dependencies>
 
 </project>

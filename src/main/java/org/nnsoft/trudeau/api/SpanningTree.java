@@ -1,5 +1,7 @@
 package org.nnsoft.trudeau.api;
 
+import com.google.common.graph.ValueGraph;
+
 /*
  *   Copyright 2013 The Trudeau Project
  *
@@ -25,7 +27,7 @@ package org.nnsoft.trudeau.api;
  * @param <W> the weight type
  */
 public interface SpanningTree<V, WE, W>
-    extends UndirectedGraph<V, WE>, Weighted<W>
+    extends ValueGraph<V, WE>, Weighted<W>
 {
 
 }
