@@ -51,4 +51,12 @@
     </site>
   </distributionManagement>
 
+  <dependencies>
+    <dependency>
+      <groupId>org.99soft.trudeau.math</groupId>
+      <artifactId>org.99soft.trudeau.math.monoid</artifactId>
+      <version>0.0.1</version>
+    </dependency>
+  </dependencies>
+
 </project>
